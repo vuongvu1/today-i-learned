@@ -35,7 +35,7 @@
     "query-string": "^6.13.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^6.1.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.19",
     "react-use-flexsearch": "^0.1.1",
@@ -43,7 +43,7 @@
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
     "typography": "^0.16.19",
-    "typography-theme-wordpress-2016": "^0.16.19"
+    "typography-theme-ocean-beach": "^0.16.19"
   },
   "devDependencies": {
     "gatsby-cli": "^2.12.66",
