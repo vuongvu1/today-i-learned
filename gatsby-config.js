@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Today I Learned`,
-    author: `Gatsby`,
+    author: `Vuong Vu`,
     description: `A place I share what I learned, probably interesting things.`,
     siteUrl: `https://til-vuongvu.netlify.app/`,
     social: {
-      twitter: `gatsbyjs`,
+      linkedIn: `https://www.linkedin.com/in/vuongvu1/`,
     },
   },
   plugins: [
