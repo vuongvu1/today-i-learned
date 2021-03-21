@@ -57,7 +57,7 @@ const SearchedPosts = ({ results }) =>
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${slug}`}>
+            <Link style={{ boxShadow: `none` }} to={`/post${slug}`}>
               {title}
             </Link>
           </h3>
@@ -87,7 +87,7 @@ const AllPosts = ({ posts }) => (
               marginBottom: rhythm(1 / 4),
             }}
           >
-            <Link style={{ boxShadow: `none` }} to={`/blog${node.fields.slug}`}>
+            <Link style={{ boxShadow: `none` }} to={`/post${node.fields.slug}`}>
               {title}
             </Link>
           </h3>
@@ -103,14 +103,14 @@ const AllPosts = ({ posts }) => (
   </div>
 );
 
-const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
+const SearchPosts = ({ posts, localSearchPost, location, navigate }) => {
   const { search } = queryString.parse(location.search);
   const [query, setQuery] = useState(search || "");
 
   const results = useFlexSearch(
     query,
-    localSearchBlog.index,
-    JSON.parse(localSearchBlog.store)
+    localSearchPost.index,
+    JSON.parse(localSearchPost.store)
   );
 
   return (
@@ -130,7 +130,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
           value={query}
           onChange={e => {
             navigate(
-              e.target.value ? `/blog/?search=${e.target.value}` : "/blog/"
+              e.target.value ? `/post/?search=${e.target.value}` : "/post/"
             );
             setQuery(e.target.value);
           }}

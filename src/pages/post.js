@@ -7,12 +7,12 @@ import SEO from "../components/seo";
 import Button from "../components/button";
 import SearchPosts from "../components/searchPosts";
 
-class Blog extends React.Component {
+class Post extends React.Component {
   render() {
     const { data, navigate, location } = this.props;
     const siteTitle = data.site.siteMetadata.title;
     const posts = data.allMdx.edges;
-    const localSearchBlog = data.localSearchBlog;
+    const localSearchPost = data.localSearchPost;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -20,7 +20,7 @@ class Blog extends React.Component {
         <Bio />
         <SearchPosts
           posts={posts}
-          localSearchBlog={localSearchBlog}
+          localSearchPost={localSearchPost}
           navigate={navigate}
           location={location}
         />
@@ -32,7 +32,7 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog;
+export default Post;
 
 export const pageQuery = graphql`
   query {
@@ -41,7 +41,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    localSearchBlog {
+    localSearchPost {
       index
       store
     }

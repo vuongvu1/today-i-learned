@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    // edit below
-    title: `Gatsby Starter Personal Blog`,
+    title: `Today I Learned`,
     author: `Gatsby`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `A place I share what I learned, probably interesting things.`,
+    siteUrl: `https://til-vuongvu.netlify.app/`,
     social: {
       twitter: `gatsbyjs`,
     },
@@ -19,7 +18,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-local-search",
       options: {
-        name: "blog",
+        name: "post",
         engine: "flexsearch",
         engineOptions: {
           encode: "icase",
@@ -63,8 +62,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content/post`,
+        name: `post`,
       },
     },
     {
@@ -120,8 +119,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        // edit below
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/cat.webp`,
       },
     },
     {
