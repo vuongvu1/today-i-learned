@@ -11,9 +11,15 @@ function IndexPage({ location }) {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="Home" keywords={[`post`, `gatsby`, `javascript`, `react`]} />
-      <img style={{ margin: 0, width: "50%" }} src="./cat.webp" alt="cat" />
+      <div style={{ textAlign: "center" }}>
+        <img
+          style={{ margin: 0, width: "50%", borderRadius: "50%" }}
+          src="./avatar.png"
+          alt="avatar"
+        />
+      </div>
       <h1>
-        Hey there,{" "}
+        Hey there{" "}
         <span role="img" aria-label="wave emoji">
           👋
         </span>
@@ -21,24 +27,30 @@ function IndexPage({ location }) {
       <p>
         I'm Vuong Vu, a Front End developer working professionally for
         approximately 4 years. Throughout my work and learning, there're a lot
-        of interesting things I've known and tried to remember, thing is, I
-        always forget them and I keep searching for the same thing over and over
-        again. However, I don't like writing blogs, I hate writing because it
-        requires a lot of words.
+        of interesting things I've known and tried to remember, problem is, I
+        always forget them as I keep searching for the same thing over and over
+        again.
       </p>
       <p>
-        So when I know about this <strong>today-i-learned</strong> concept, I
-        think it very suits me for some reasons:
+        So when I know about this{" "}
+        <a href="https://www.reddit.com/r/todayilearned/">
+          today I learned (til)
+        </a>{" "}
+        concept, I think it very suits me for some reasons:
       </p>
       <ul>
         <li>
-          I want to have a place to note all the things I think it's
-          interesting, not only tech but anything
+          I want to have a place to note all interesting things, just for myself
         </li>
-        <li>It doesn't require a lot of words</li>
+        <li>It doesn't require a lot of words like blogs</li>
         <li>I can practice writing English</li>
       </ul>
-      <p>I'm happy that you're here :D.</p>
+      <p>
+        I'm happy that you're here{" "}
+        <span role="img" aria-label="heart emoji">
+          ♥️
+        </span>
+      </p>
       <Link to="/post/">
         <Button marginTop="35px">See all Posts</Button>
       </Link>
