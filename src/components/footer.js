@@ -14,7 +14,7 @@ function Footer() {
             <div>
               © {new Date().getFullYear()} - Written by{" "}
               <strong>{author}</strong>. Connect with me on{` `}
-              <a href={`https://twitter.com/${social.linkedIn}`}>LinkedIn</a>.
+              <a href={social.linkedIn}>LinkedIn</a>.
             </div>
           </Container>
         );

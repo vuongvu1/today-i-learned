@@ -2,9 +2,8 @@
 path: free-cross-browser-testing-site
 date: 2021-03-23T06:10:20.402Z
 title: Free cross browser testing site
-description: I found a great free cross browser testing site
+description: https://app.crossbrowsertesting.com
 ---
-Here is it:
 
 https://app.crossbrowsertesting.com
 

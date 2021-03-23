@@ -3,21 +3,24 @@ import { Link } from "gatsby";
 import styled from "styled-components";
 import { rhythm, scale } from "../utils/typography";
 
-function Header({ location, title }) {
-  const rootPath = `${__PATH_PREFIX__}/`;
-  const postPath = `${__PATH_PREFIX__}/post/`;
+const rootPath = `${__PATH_PREFIX__}/`;
+const postPath = `${__PATH_PREFIX__}/post/`;
 
-  if (location.pathname === rootPath || location.pathname === postPath) {
+function Header({ location, title }) {
+  const isRootPath = location.pathname === rootPath;
+  const isPostPath = location.pathname === postPath;
+
+  if (isRootPath || isPostPath) {
     return (
       <header>
-        <Title>
+        <Title isCenter={isRootPath}>
           <Link
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
               color: `inherit`,
             }}
-            to={location.pathname === postPath ? `/post/` : `/`}
+            to={isPostPath ? `/post/` : `/`}
           >
             {title}
           </Link>
@@ -45,9 +48,10 @@ function Header({ location, title }) {
 }
 
 const Title = styled.h1`
-  ${{ ...scale(1.5) }};
+  ${{ ...scale(1.2) }};
   margin-bottom: ${rhythm(1.5)};
   margin-top: 0;
+  text-align: ${p => (p.isCenter ? "center" : "left")};
 `;
 
 export default Header;
