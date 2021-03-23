@@ -2,7 +2,7 @@
 path: today-i-learned-about-til
 date: 2021-03-22T15:34:21.211Z
 title: Today I learned about TIL
-description: This new contept is really interesting
+description: This new concept is really interesting
 ---
 ![](../assets/learn.webp)
 
