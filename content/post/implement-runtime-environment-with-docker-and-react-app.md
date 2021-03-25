@@ -8,6 +8,8 @@ description: I thought React app can only use environment variables at build
 ---
 Reference: https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/
 
+![](../assets/docker.png)
+
 # Goal
 
 We want to be able to run our React application as a Docker container that is built once, it runs everywhere by being configurable during runtime.
@@ -81,8 +83,6 @@ const getGlobal = (key: string): string => {
   return window._env_?.[key] || process.env[key];
 };
 ```
-
-
 
 And use environment variable in our app:
 
