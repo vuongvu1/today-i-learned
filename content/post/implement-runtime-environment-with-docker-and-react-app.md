@@ -2,9 +2,8 @@
 path: implement-runtime-environment-with-docker-and-react-app
 date: 2021-03-25T16:07:40.896Z
 title: Implement runtime environment with Docker and React app
-description: I thought React app can only use environment variables at build
-  time, but today I learned that there's a way to inject environment variables
-  at runtime
+description: Today I learned that there's a way to inject environment variables
+  at runtime for React app
 ---
 Reference: https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/
 
@@ -30,7 +29,7 @@ We can write them into a file and it's imported into our application using `<scr
 
 The `[env.sh](http://env.sh)` is a small bash script that will read `.env` files (production, staging, dev or test) and write them into a file. If you set an environment variable inside the container, its value will be used, otherwise, it will fall back to the default value from `.env` file. It will create a JavaScript file that puts environment variable values as an object which is assigned as a property of `window` object.
 
-```shell
+```shellsession
 #!/bin/bash
 
 # Recreate config file
@@ -94,14 +93,14 @@ Update build scripts to run `[env.sh](<http://env.sh>)` before start building:
 
 ```json
 "scripts": {
-    "start": "npm run build:env && react-scripts start",
-    "build:env": "chmod +x ./env.sh && ./env.sh && cp env-config.js ./public/",
-  }
+  "start": "npm run build:env && react-scripts start",
+  "build:env": "chmod +x ./env.sh && ./env.sh && cp env-config.js ./public/",
+}
 ```
 
 Update `Dockerfile`:
 
-```shell
+```dockerfile
 FROM node:10 as uiBuilder
 
 RUN mkdir -p /app
@@ -141,7 +140,7 @@ CMD ["/bin/bash", "-c", "/usr/share/nginx/html/env.sh && nginx -g \"daemon off;\
 
 All the setup is now complete, now we can run our docker image with either production or staging environment:
 
-```shell
+```dockerfile
 # run with Production environment
 docker run -p 3000:80 -t --name [your_container_name] [docker_image_id]
 
