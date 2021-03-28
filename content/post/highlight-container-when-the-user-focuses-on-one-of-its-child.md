@@ -49,6 +49,6 @@ input {
 
 ![](../assets/focus-within.gif)
 
-## Reference:
+## Reference
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-within
