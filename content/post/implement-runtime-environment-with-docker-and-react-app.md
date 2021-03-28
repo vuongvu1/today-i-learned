@@ -5,8 +5,6 @@ title: Implement runtime environment variables with Docker and React app
 description: Today I learned that there's a way to inject environment variables
   at runtime for React app
 ---
-Reference: https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/
-
 ![](../assets/docker.png)
 
 # Goal
@@ -147,3 +145,7 @@ docker run -p 3000:80 -t --name [your_container_name] [docker_image_id]
 # run with Staging environment
 docker run -p 3000:80 -t --env-file .env.staging --name [your_container_name] [docker_image_id]
 ```
+
+## Reference
+
+https://www.freecodecamp.org/news/how-to-implement-runtime-environment-variables-with-create-react-app-docker-and-nginx-7f9d42a91d70/
