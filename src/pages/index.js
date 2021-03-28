@@ -46,7 +46,7 @@ function IndexPage({ location }) {
         <li>I can practice writing English</li>
       </ul>
       <p>
-        I'm happy that you're here{" "}
+        Nice to see you here{" "}
         <span role="img" aria-label="heart emoji">
           ♥️
         </span>
