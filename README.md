@@ -12,4 +12,4 @@ So when I know about this `today I learned (til)` concept, I think it very suits
 - It doesn't require a lot of words like blogs
 - I can practice writing English
 
-I'm happy that you're here ♥️
+Nice to see you here ♥️
