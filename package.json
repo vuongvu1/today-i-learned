@@ -3,10 +3,7 @@
   "private": true,
   "description": "A place I share what I learned, probably interesting things.",
   "version": "1.0.0",
-  "author": "Vuong vu",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Vuong Vu",
   "dependencies": {
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
@@ -50,7 +47,7 @@
     "gatsby-plugin-root-import": "^2.0.5",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://til.vuongvu.me/",
   "keywords": [
     "gatsby"
   ],
@@ -58,7 +55,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/vuongvu1/today-i-learned"
   },
   "scripts": {
     "build": "gatsby build",
