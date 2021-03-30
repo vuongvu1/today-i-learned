@@ -4,10 +4,7 @@ date: 2021-03-22T15:56:43.842Z
 title: Testing library for Hooks
 description: https://github.com/testing-library/react-hooks-testing-library
 ---
-
-https://github.com/testing-library/react-hooks-testing-library
-
-Example:
+## Example:
 
 ```jsx
 // useCounter.js
@@ -41,3 +38,7 @@ test("should increment counter", () => {
   expect(result.current.count).toBe(1);
 });
 ```
+
+## Reference
+
+https://github.com/testing-library/react-hooks-testing-library
