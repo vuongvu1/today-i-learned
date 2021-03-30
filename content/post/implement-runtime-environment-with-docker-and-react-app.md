@@ -25,9 +25,9 @@ We can write them into a file and it's imported into our application using `<scr
 
 # Implement
 
-The `[env.sh](http://env.sh)` is a small bash script that will read `.env` files (production, staging, dev or test) and write them into a file. If you set an environment variable inside the container, its value will be used, otherwise, it will fall back to the default value from `.env` file. It will create a JavaScript file that puts environment variable values as an object which is assigned as a property of `window` object.
+The `env.sh` is a small bash script that will read `.env` files (production, staging, dev or test) and write them into a file. If you set an environment variable inside the container, its value will be used, otherwise, it will fall back to the default value from `.env` file. It will create a JavaScript file that puts environment variable values as an object which is assigned as a property of `window` object.
 
-```shell
+```tcsh
 #!/bin/bash
 
 # Recreate config file
