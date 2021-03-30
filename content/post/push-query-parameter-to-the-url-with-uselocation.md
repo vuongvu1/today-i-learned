@@ -36,7 +36,7 @@ const Child = () => {
 
 ## Parent
 
-```
+```jsx
 const Parent = () => {
   const { search, pathname } = useLocation();
 
