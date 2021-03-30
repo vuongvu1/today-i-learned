@@ -2,8 +2,7 @@
 path: implement-runtime-environment-with-docker-and-react-app
 date: 2021-03-25T16:07:40.896Z
 title: Implement runtime environment variables with Docker and React app
-description: Today I learned that there's a way to inject environment variables
-  at runtime for React app
+description: There is a way to inject environment variables at runtime for React app
 ---
 ![](../assets/docker.png)
 
