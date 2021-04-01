@@ -25,7 +25,7 @@ function IndexPage({ location }) {
         </span>
       </h1>
       <p>
-        I'm Vuong Vu, a Front End developer working professionally for
+        I'm Vuong Vu, a frontend developer working professionally for
         approximately 4 years. Throughout my work and learning, there're a lot
         of interesting things I've known and tried to remember, problem is, I
         always forget them as I keep searching for the same thing over and over
