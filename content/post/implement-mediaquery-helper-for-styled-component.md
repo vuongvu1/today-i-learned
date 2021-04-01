@@ -6,11 +6,10 @@ description: Helper tool for responsive design
 ---
 ![](../assets/styled-component.png)
 
-## Add breakpoint values to the global theme
+### Add breakpoint values to the global theme
 
 ```tsx
 import { DefaultTheme } from "styled-components";
-
 
 export const theme: DefaultTheme = {
   breakpoint: {
@@ -21,7 +20,7 @@ export const theme: DefaultTheme = {
 };
 ```
 
-## Implement helper
+### Implement helper
 
 ```tsx
 export const mediaQueries = (key: "sm" | "md" | "lg") => {
@@ -35,7 +34,7 @@ export const mediaQueries = (key: "sm" | "md" | "lg") => {
 };
 ```
 
-## Usage
+### Usage
 
 ```javascript
 const Wrapper = styled.div`
