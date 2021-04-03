@@ -57,7 +57,6 @@ export const useScroll = () => {
 };
 
 export default useScroll;
-
 ```
 
 ## useWindowSize.tsx
@@ -94,7 +93,6 @@ const useWindowSize = () => {
 };
 
 export default useWindowSize;
-
 ```
 
 ## useScreen.tsx
@@ -151,7 +149,24 @@ const useScreen = () => {
 };
 
 export default useScreen;
+```
 
+## useStateWithSessionStorage.tsx
+
+```tsx
+const useStateWithSessionStorage = (sessionStorageKey: string) => {
+  const [value, setValue] = useState<string>(
+    sessionStorage.getItem(sessionStorageKey) || ""
+  );
+
+  useEffect(() => {
+    sessionStorage.setItem(sessionStorageKey, value);
+  }, [value, sessionStorageKey]);
+
+  return [value, setValue] as const;
+};
+
+export default useStateWithSessionStorage;
 ```
 
 ## ...Continue
