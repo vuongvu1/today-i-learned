@@ -6,6 +6,15 @@ description: A place to keep all my custom hooks
 ---
 ![](../assets/hooks.png)
 
+# Table
+
+- [useScroll.tsx](#useScroll.tsx)
+- [useWindowSize.tsx](#useWindowSize.tsx)
+- [useScreen.tsx](#useScreen.tsx)
+- [useStateWithSessionStorage.tsx](#useStateWithSessionStorage.tsx)
+
+
+
 ## useScroll.tsx
 
 Return current user's scroll position and direction 
@@ -152,6 +161,8 @@ export default useScreen;
 ```
 
 ## useStateWithSessionStorage.tsx
+
+Use state to get and set Session Storage values. 
 
 ```tsx
 const useStateWithSessionStorage = (sessionStorageKey: string) => {
