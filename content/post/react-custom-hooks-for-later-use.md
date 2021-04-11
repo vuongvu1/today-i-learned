@@ -8,16 +8,14 @@ description: A place to keep all my custom hooks
 
 # Table
 
-- [useScroll.tsx](#useScroll.tsx)
-- [useWindowSize.tsx](#useWindowSize.tsx)
-- [useScreen.tsx](#useScreen.tsx)
-- [useStateWithSessionStorage.tsx](#useStateWithSessionStorage.tsx)
+* [useScroll.tsx](#useScroll)
+* [useWindowSize.tsx](#useWindowSize)
+* [useScreen.tsx](#useScreen)
+* [useStateWithSessionStorage](#useStateWithSessionStorage)
 
+## useScroll <a name="useScroll"></a>
 
-
-## useScroll.tsx
-
-Return current user's scroll position and direction 
+Return current user's scroll position and direction.
 
 ```tsx
 import { useState, useEffect } from "react";
@@ -68,7 +66,7 @@ export const useScroll = () => {
 export default useScroll;
 ```
 
-## useWindowSize.tsx
+## useWindowSize <a name="useWindowSize"></a>
 
 Return current user's browser window size.
 
@@ -104,7 +102,7 @@ const useWindowSize = () => {
 export default useWindowSize;
 ```
 
-## useScreen.tsx
+## useScreen <a name="useScreen"></a>
 
 An extension of \`useWindowSize()\` hook, this one returns which screen size user is in.
 
@@ -160,7 +158,7 @@ const useScreen = () => {
 export default useScreen;
 ```
 
-## useStateWithSessionStorage.tsx
+## useStateWithSessionStorage <a name="useStateWithSessionStorage"></a>
 
 Use state to get and set Session Storage values. 
 
@@ -180,4 +178,4 @@ const useStateWithSessionStorage = (sessionStorageKey: string) => {
 export default useStateWithSessionStorage;
 ```
 
-## ...Continue
+### ...to be update
