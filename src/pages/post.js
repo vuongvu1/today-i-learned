@@ -6,29 +6,26 @@ import SEO from "../components/seo";
 import Button from "../components/button";
 import SearchPosts from "../components/searchPosts";
 
-class Post extends React.Component {
-  render() {
-    const { data, navigate, location } = this.props;
-    const siteTitle = data.site.siteMetadata.title;
-    const posts = data.allMdx.edges;
-    const localSearchPost = data.localSearchPost;
+const Post = ({ data, navigate, location }) => {
+  const siteTitle = data.site.siteMetadata.title;
+  const posts = data.allMdx.edges;
+  const localSearchPost = data.localSearchPost;
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <SearchPosts
-          posts={posts}
-          localSearchPost={localSearchPost}
-          navigate={navigate}
-          location={location}
-        />
-        <Link to="/">
-          <Button marginTop="85px">Go Home</Button>
-        </Link>
-      </Layout>
-    );
-  }
-}
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO title="All posts" />
+      <SearchPosts
+        posts={posts}
+        localSearchPost={localSearchPost}
+        navigate={navigate}
+        location={location}
+      />
+      <Link to="/">
+        <Button marginTop="85px">Go Home</Button>
+      </Link>
+    </Layout>
+  );
+};
 
 export default Post;
 

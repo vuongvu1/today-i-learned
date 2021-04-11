@@ -25,13 +25,6 @@ function Footer() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/cat.webp/" }) {
-      childImageSharp {
-        fixed(width: 50, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     site {
       siteMetadata {
         author

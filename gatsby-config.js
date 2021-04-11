@@ -104,13 +104,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Gatsby Starter Blog`,
@@ -119,7 +112,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/cat.webp`,
+        icon: `content/assets/logo192.png`,
       },
     },
     {
