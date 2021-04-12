@@ -8,9 +8,9 @@ description: A place to keep all my custom hooks
 
 # Table
 
-* [useScroll.tsx](#useScroll)
-* [useWindowSize.tsx](#useWindowSize)
-* [useScreen.tsx](#useScreen)
+* [useScroll](#useScroll)
+* [useWindowSize](#useWindowSize)
+* [useScreen](#useScreen)
 * [useStateWithSessionStorage](#useStateWithSessionStorage)
 
 ## useScroll <a name="useScroll"></a>
