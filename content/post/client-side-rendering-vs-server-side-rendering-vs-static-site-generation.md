@@ -4,8 +4,6 @@ date: 2021-04-05T15:27:17.789Z
 title: Client-Side Rendering vs Server-Side Rendering vs Static Site Generation
 description: Pros and cons of 3 ways a website can be rendered onto the browser
 ---
-![](../assets/ssr-csr-ssg.png)
-
 ## Client-side Rendering (CSR)
 
 The concept of CSR is the browser (client) renders the page dynamically using JavaScript, each route and page content is created and rendered by the browser.
@@ -52,3 +50,7 @@ SSG sites are using templates to create HTML pages to be ready to view at anytim
 
 * It's not suitable for sites that have frequent content updates because it will have to rebuild the static page every time.
 * Build time is generally longer in general, so it’s not good for sites that have many static pages.
+
+## Reference
+
+https://lo-victoria.com/comparing-3-ways-websites-render-onto-browser
