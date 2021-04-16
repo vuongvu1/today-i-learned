@@ -79,7 +79,7 @@ $ git update-index --no-assume-unchanged [file_paths]
 $ git ls-files -v | grep "^[a-z]"
 ```
 
-#### Completely remote a file from history
+#### Completely remove a file from the history
 
 ```
 $ git filter-branch --index-filter \
