@@ -57,7 +57,7 @@ I created a new simple Node app and published it [here.](https://github.com/vuon
 
 First, copy the **credentials.json** file to the project directory.
 
-Then, create an .env file to store our sheet_id and sheet_title.
+Then, create an .env file to store our GOOGLE_SHEET_ID (id from the sheet URL) and GOOGLE_SHEET_TITLE ("heroes").
 
 Here is the main script (index.js):
 
@@ -129,7 +129,7 @@ const writeContent = (rowData) => {
 
 So we did successfully use Google Sheets API as our private CMS, from here, we can modify the sheet and run the app again to see the changes.
 
-And we can explore the API to create more functions like write, delete, update the cells, rows... of the sheet with convenience.
+Now we can explore the API to add more functionalities like write, delete, update the cells, rows... of the sheet with convenience.
 
 ## Reference
 https://blog.usejournal.com/how-to-use-google-sheets-as-a-cms-or-a-database-f9d8e736fdce
