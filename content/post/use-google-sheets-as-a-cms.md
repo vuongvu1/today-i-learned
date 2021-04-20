@@ -23,7 +23,9 @@ Sheet title is: **heroes**
 
 ![](../assets/dota-sheet.png)
 
-also remember the sheet id: https://docs.google.com/spreadsheets/d/**\[sheet-id]**/edit#gid=0 
+also remember the sheet id:
+
+https://docs.google.com/spreadsheets/d/[sheet-id]/edit#gid=0 
 
 ## 2. Setup Google Cloud API
 
@@ -128,3 +130,6 @@ const writeContent = (rowData) => {
 So we did successfully use Google Sheets API as our private CMS, from here, we can modify the sheet and run the app again to see the changes.
 
 And we can explore the API to create more functions like write, delete, update the cells, rows... of the sheet with convenience.
+
+## Reference
+https://blog.usejournal.com/how-to-use-google-sheets-as-a-cms-or-a-database-f9d8e736fdce
