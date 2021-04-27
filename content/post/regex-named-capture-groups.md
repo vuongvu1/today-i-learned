@@ -15,7 +15,6 @@ const match = re.exec('2021-04-26');
 console.log(match[1]); // -> 2021
 console.log(match[2]); // -> 04
 console.log(match[3]); // -> 26
-
 ```
 
 ### With named capture groups
@@ -29,7 +28,7 @@ console.log(match.groups.month); // -> 04
 console.log(match.groups.day);   // -> 26
 
 // with destructuring assignment
-const [match, year, month, day] = re.exec('2021-04-26');
+const { year, month, day } = match.groups;
 ```
 
 ### Reference
