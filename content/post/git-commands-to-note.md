@@ -130,3 +130,11 @@ $ git tag -d [tagname]
 ```
 $ git push --delete origin [tagname]
 ```
+
+#### Reset login password
+
+`Authentication failed for 'https://______.git'`
+```
+$ git config --global --unset user.password
+```
+Then run your git command (ex. git push) and reenter username and password.
