@@ -1,7 +1,7 @@
 ---
-path: implementing-memoization-in-javascript
+path: implement-memoization-in-javascript
 date: 2021-06-19T16:31:52.680Z
-title: Implementing Memoization in JavaScript
+title: Implement Memoization in JavaScript
 description: Programs often waste time calling functions which recalculate the
   same results over and over again. Memoization helps to resolve this problem.
 ---
