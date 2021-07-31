@@ -22,17 +22,17 @@ The focus trap should follow the figure's order.
 
 Clicking on the modal background (which should usually cover the whole page) or pressing Escape should close the modal.
 
-### Guard against accidental dismissal
+## Guard against accidental dismissal
 
 ![](../assets/modal-4.png)
 
-When the form is filled, require explicit cancelation or submission to prevent users losing progress or forgetting to submit.
+When the form is filled, require explicit cancelation or submission to prevent users from losing progress or forgetting to submit.
 
 ## Sticky header & footer
 
 ![](../assets/modal-5.png)
 
-In long modal, make the header and the footer sticky so that users can see the control buttons without scrolling.
+In a long modal, make the header and the footer sticky so that users can see the control buttons without scrolling.
 
 ## Filterable lists
 
