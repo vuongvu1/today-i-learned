@@ -41,34 +41,32 @@ const SearchBar = styled.div`
   }
 `;
 
+const Post = ({ slug, title, date }) => (
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "flex-start",
+      margin: "1.2rem 0",
+    }}
+  >
+    <h4 style={{ margin: 0 }}>
+      <Link style={{ boxShadow: `none` }} to={`/post${slug}`}>
+        {title}
+      </Link>
+    </h4>
+    <small style={{ float: "right", whiteSpace: "nowrap" }}>{date}</small>
+  </div>
+);
+
 const SearchedPosts = ({ results }) =>
   results.length > 0 ? (
     results.map(node => {
       const date = node.date;
       const title = node.title || node.slug;
-      const description = node.description;
-      const excerpt = node.excerpt;
       const slug = node.slug;
 
-      return (
-        <div key={slug}>
-          <h3
-            style={{
-              marginBottom: rhythm(1 / 4),
-            }}
-          >
-            <Link style={{ boxShadow: `none` }} to={`/post${slug}`}>
-              {title}
-            </Link>
-          </h3>
-          <small>{date}</small>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: description || excerpt,
-            }}
-          />
-        </div>
-      );
+      return <Post key={slug} date={date} title={title} slug={slug} />;
     })
   ) : (
     <p style={{ textAlign: "center" }}>
@@ -79,26 +77,11 @@ const SearchedPosts = ({ results }) =>
 const AllPosts = ({ posts }) => (
   <div style={{ margin: "20px 0 40px" }}>
     {posts.map(({ node }) => {
+      const date = node.frontmatter.date;
       const title = node.frontmatter.title || node.fields.slug;
-      return (
-        <div key={node.fields.slug}>
-          <h3
-            style={{
-              marginBottom: rhythm(1 / 4),
-            }}
-          >
-            <Link style={{ boxShadow: `none` }} to={`/post${node.fields.slug}`}>
-              {title}
-            </Link>
-          </h3>
-          <small>{node.frontmatter.date}</small>
-          <p
-            dangerouslySetInnerHTML={{
-              __html: node.frontmatter.description || node.excerpt,
-            }}
-          />
-        </div>
-      );
+      const slug = node.fields.slug;
+
+      return <Post key={slug} date={date} title={title} slug={slug} />;
     })}
   </div>
 );
