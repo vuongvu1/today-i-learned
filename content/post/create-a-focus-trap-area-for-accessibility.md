@@ -52,7 +52,7 @@ const firstFocusableEl = focusableElements[0];
 const lastFocusableEl = focusableElements[focusableElements.length - 1];
 ```
 
-5. Add an event listener to listen to **keydown** event
+5. Add an event listener to listen to the **keydown** event
 
 Basically, when user press **tab** to move the focus forward or **shift-tab** to move backward, the current focus element is always staying inside the area.
 
