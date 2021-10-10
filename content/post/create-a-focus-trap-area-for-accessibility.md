@@ -32,7 +32,7 @@ function isHidden(el: Element): boolean {
 }
 ```
 
-3. Get all element
+3. Get all elements and filter hidden elements
 
 ```jsx
 const allElements = el.querySelectorAll(FOCUSABLE_ELEMENT_SELECTORS);
