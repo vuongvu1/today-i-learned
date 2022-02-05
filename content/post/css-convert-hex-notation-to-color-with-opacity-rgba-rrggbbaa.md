@@ -1,7 +1,7 @@
 ---
 path: css-convert-hex-notation-to-color-with-opacity-rgba-&-rrggbbaa
 date: 2022-01-30T10:08:05.466Z
-title: "CSS: Convert #hex notation to color with opacity (#rgba & #rrggbbaa)"
+title: "[CSS] Convert #hex notation to color with opacity (#rgba & #rrggbbaa)"
 ---
 ## Switching from hex notation to `rgba()`
 
