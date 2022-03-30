@@ -1,7 +1,7 @@
 ---
 path: request-api-hook
 date: 2022-03-26T13:16:33.569Z
-title: "[react-hooks] Request API hook"
+title: Sample request API hook
 ---
 This sample hook will send a request to an API:
 * Use Fetch API
