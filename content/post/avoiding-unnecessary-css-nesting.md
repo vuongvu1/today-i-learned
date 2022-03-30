@@ -1,9 +1,9 @@
 ---
-path: avoiding-unnecessary-css-nesting
+path: avoid-unnecessary-css-nesting
 date: 2022-03-06T14:05:30.779Z
-title: Avoiding unnecessary CSS nesting
+title: Avoid unnecessary CSS nesting
 ---
-### Reason
+### Why?
 
 The more selector we include in styling the element, the higher the CSS-specificity will be, and it's harder to override in the future.
 
