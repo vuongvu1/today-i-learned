@@ -9,7 +9,7 @@ The *:empty* CSS pseudo-class represents any element that has no children.
 
 ## Usage
 
-The class is useful in some cases such as when there's "no data" passed to a list:
+This pseudo-class is useful in some cases such as when there's no data is passed to a list:
 
 ```jsx
 export default function App() {
@@ -27,20 +27,40 @@ export default function App() {
 ```
 
 ```css
-// style
+// style.css
+
 ul:empty::after {
   content: 'No data to show';
   color: red;
 }
 ```
 
-#### 1. When 'data' list is passed
+1. When 'data' list is available
 
 ![](../assets/screenshot-2022-04-30-at-6.01.39-pm.png)
 
-#### 2. When there's no data
+2. When there's no data
 
 ![](../assets/screenshot-2022-04-30-at-6.17.06-pm.png)
+
+## Get no result text from a prop
+
+```jsx
+<ul noResultText="blablalblabl bla bal">
+  ...
+</ul>
+```
+
+```css
+// style.css
+
+ul:empty::after {
+  content: attr(noResultText);
+  color: red;
+}
+```
+
+![](../assets/screenshot-2022-04-30-at-10.37.59-pm.png)
 
 ## Reference
 
