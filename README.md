@@ -1,6 +1,6 @@
 # Today I Learned
 
-URL: https://til.vuongvu.me/
+URL: https://til.vuongvu.xyz
 
 ## Hey there 👋
 
