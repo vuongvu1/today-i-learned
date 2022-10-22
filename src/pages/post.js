@@ -21,7 +21,7 @@ const Post = ({ data, navigate, location }) => {
         location={location}
       />
       <Link to="/">
-        <Button marginTop="85px">Go Home</Button>
+        <Button marginTop="85px">Home</Button>
       </Link>
     </Layout>
   );

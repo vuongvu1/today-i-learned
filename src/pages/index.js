@@ -44,7 +44,7 @@ function IndexPage({ location }) {
       <p>Nice to meet you here! ♥️</p>
 
       <Link to="/post/">
-        <Button marginTop="35px">See all Posts</Button>
+        <Button marginTop="35px">All Posts</Button>
       </Link>
     </Layout>
   );
