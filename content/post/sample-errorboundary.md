@@ -1,7 +1,7 @@
 ---
 path: simple-error-boundary-component
 date: 2022-11-13T13:16:03.555Z
-title: ErrorBoundary Example
+title: "[Example] ErrorBoundary"
 ---
 ```jsx
 class ErrorBoundary extends React.Component {
