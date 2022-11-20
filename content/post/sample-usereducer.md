@@ -1,7 +1,7 @@
 ---
 path: sample-usereducer
 date: 2022-11-20T18:38:12.242Z
-title: useReducer Example
+title: "[Example] useReducer"
 ---
 ```jsx
 import { useReducer } from 'react';
