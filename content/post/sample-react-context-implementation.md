@@ -1,7 +1,7 @@
 ---
 path: simple-react-context-implementation
 date: 2021-09-10T16:00:00.000Z
-title: React Context Example
+title: "[Example] React Context"
 ---
 ## React Context
 
