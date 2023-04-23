@@ -1,7 +1,7 @@
 ---
 path: cra-custom-environment-variables
 date: 2023-04-23T11:38:19.617Z
-title: CRA custom environment variables
+title: Custom environment variables in CRA
 ---
 # Adding Custom Environment Variables
 
