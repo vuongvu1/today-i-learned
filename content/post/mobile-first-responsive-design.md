@@ -1,6 +1,6 @@
 ---
 path: mobile-first-responsive-design
-date: 2023-02-27T10:57:29.845Z
+date: 2023-09-17T22:00:00.000Z
 title: Mobile-First Responsive Design
 ---
 # What is?
