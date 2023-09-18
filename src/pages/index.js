@@ -25,32 +25,24 @@ function IndexPage({ location }) {
         </span>
       </h1>
       <p>
-        I'm Vuong Vu, a frontend developer working professionally for
-        approximately 4 years. Throughout my work and learning, there're a lot
-        of interesting things I've known and tried to remember, problem is, I
-        always forget them as I keep searching for the same thing over and over
-        again.
+        I'm Vuong Vu, a frontend developer. I've encountered many interesting
+        things during my work and learning journey, but I often forget them and
+        end up searching for the same information repeatedly.
       </p>
+
       <p>
-        So when I know about this{" "}
-        <a href="https://www.reddit.com/r/todayilearned/">
-          today I learned (til)
-        </a>{" "}
-        concept, I think it very suits me for some reasons:
+        Today, I discovered the "Today I Learned" (TIL) concept, and it fits my
+        needs for a few reasons:
       </p>
+
       <ul>
-        <li>
-          I want to have a place to note all interesting things, just for myself
-        </li>
-        <li>It doesn't require a lot of words like blogs</li>
-        <li>I can practice writing English</li>
+        <li>I want a place to note down interesting things just for myself.</li>
+        <li>It doesn't require lengthy blog posts; short notes are enough.</li>
+        <li>It's a great way for me to practice writing in English.</li>
       </ul>
-      <p>
-        Nice to see you here{" "}
-        <span role="img" aria-label="heart emoji">
-          ♥️
-        </span>
-      </p>
+
+      <p>Nice to meet you here! ♥️</p>
+
       <Link to="/post/">
         <Button marginTop="35px">See all Posts</Button>
       </Link>
