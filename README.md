@@ -2,14 +2,12 @@
 
 URL: https://til.vuongvu.xyz
 
-## Hey there 👋
+Hi there, I'm Vuong Vu, a frontend developer. I've encountered many interesting things during my work and learning journey, but I often forget them and end up searching for the same information repeatedly.
 
-I'm Vuong Vu, a front-end developer. Throughout my work and learning, there're a lot of interesting things I've known and tried to remember, problem is, I always forget them as I keep searching for the same thing over and over again.
+Today, I discovered the "Today I Learned" (TIL) concept, and it fits my needs for a few reasons:
 
-So when I know about this `today I learned (til)` concept, I think it very suits me for some reasons:
+    I want a place to note down interesting things just for myself.
+    It doesn't require lengthy blog posts; short notes are enough.
+    It's a great way for me to practice writing in English.
 
-- I want to have a place to note all interesting things, just for myself (or someone maybe?)
-- It doesn't require a lot of words like blogs
-- I can practice writing English
-
-Nice to see you here ♥️
+Nice to meet you here! ♥️
