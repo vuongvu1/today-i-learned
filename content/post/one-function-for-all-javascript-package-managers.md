@@ -24,3 +24,7 @@ alias pb="p build"
 alias pd="p dev"
 alias pi="p install"
 ```
+
+### R﻿eference
+
+<https://hackernoon.com/im-done-typing-npm-a-zsh-function-for-javascript-package-managers?source=rss>
