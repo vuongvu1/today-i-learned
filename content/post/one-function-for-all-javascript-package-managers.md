@@ -3,7 +3,7 @@ path: one-function-for-all-javascript-package-managers
 date: 2023-10-01T21:18:56.220Z
 title: One function for all JavaScript package managers
 ---
-```shell
+```powershell
 p() {
   if [[ -f bun.lockb ]]; then
     command bun "$@"
