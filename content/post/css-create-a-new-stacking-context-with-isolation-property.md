@@ -1,7 +1,7 @@
 ---
 path: create-a-new-stacking-context-with-isolation-property
 date: 2023-10-05T21:38:36.843Z
-title: "[CSS] - create a new stacking context with isolation property"
+title: "[CSS] Create a new stacking context with isolation property"
 ---
 The isolation property can create a new stacking context on the element.
 
