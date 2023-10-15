@@ -1,6 +1,6 @@
 ---
 path: "async-vs-defer-attributes "
-date: 2023-10-15T10:27:59.744Z
+date: 2023-10-13T10:27:59.744Z
 title: "async vs defer attributes "
 ---
 ![](../assets/async-vs-defer-twitter.png)
