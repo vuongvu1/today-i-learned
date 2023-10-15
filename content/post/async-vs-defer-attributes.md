@@ -7,7 +7,7 @@ title: "async vs defer attributes "
 
 # <script>
 
-The HTML file will be parsed until the script file is hit, at that point parsing will stop and a request will be made to fetch the file (if it’s external). The script will then be executed before parsing is resumed.
+The HTML file will be parsed until the script file is hit, at that point parsing will stop and a request will be made to fetch the file. The script will then be executed before parsing is resumed.
 
 # <script async>
 
