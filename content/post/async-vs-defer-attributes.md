@@ -5,15 +5,15 @@ title: "async vs defer attributes "
 ---
 ![](../assets/async-vs-defer-twitter.png)
 
-# <script>
+# Plain script
 
 The HTML file will be parsed until the script file is hit, at that point parsing will stop and a request will be made to fetch the file. The script will then be executed before parsing is resumed.
 
-# <script async>
+# Async
 
 `async` downloads the file during HTML parsing and will pause the HTML parser to execute it when it has finished downloading.
 
-# <script defer>
+# Defer
 
 `defer` downloads the file during HTML parsing and will only execute it after the parser has completed. `defer` scripts are also guaranteed to execute in the order that they appear in the document.
 
