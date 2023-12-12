@@ -18,18 +18,8 @@ p() {
   fi
 }
 
-run_project() {
-  if p dev &> /dev/null; then
-    p dev
-  elif p start &> /dev/null; then
-    p start
-  else
-    echo "No 'p start' or 'p dev' script found."
-  fi
-}
-
-alias ps='run_project'
-alias pd='run_project'
+alias ps="p start"
+alias pd="p dev"
 alias pt="p test"
 alias pb="p build"
 alias pi="p install"
