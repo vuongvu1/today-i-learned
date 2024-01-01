@@ -38,3 +38,5 @@ For a long time, this was a very hard problem that required some very complicate
 ### Reference
 
 https://courses.joshwcomeau.com/css-for-js/06-typography-and-media/03-text-overflow
+
+https://caniuse.com/?search=line-clamp
