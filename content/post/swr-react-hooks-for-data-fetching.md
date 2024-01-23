@@ -8,7 +8,6 @@ title: SWR - React Hooks for Data Fetching
 > With SWR, components will get a stream of data updates **constantly** and **automatically**.\
 > And the UI will be always **fast** and **reactive**.
 
-
 ## E﻿xample
 
 ```jsx
@@ -17,7 +16,11 @@ import useSWR from 'swr'
 async function fetcher(endpoint) {
   const response = await fetch(endpoint);
   const json = await response.json();
-  
+
+  if (!json.ok) {
+    throw json;
+  }
+
   return json;
 }
 
