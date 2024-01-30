@@ -28,10 +28,13 @@ function LinkButton({
       {children}
     </Tag>
   );
-  // Or:
-  // React.createElement(href ? 'a' : 'button', {
-  //    className: styles.button,
-  // }, children);
+  // React.createElement(
+  //   Tag,
+  //   {
+  //     className: styles.button,
+  //.    {...restProps}
+  //   },
+  //   children);
 }
 ```
 
