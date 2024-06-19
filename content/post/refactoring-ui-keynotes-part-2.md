@@ -12,8 +12,12 @@ title: Refactoring UI keynotes (Part 2)
 > A simple approach is to start with a sensible base value, then build a scale using factors and multiples of that value.
 >
 > 16px is a great number to start with because it divides nicely, and also happens to be the default font size in every major web browser.
->
+
+![](../assets/font-size.png)
+
 > A spacing and sizing system will help you create better designs, with less effort, in less time. Design advice doesn’t get much more valuable than that.
+
+![](../assets/spacing.png)
 
 ### Grids are overrated
 
