@@ -7,4 +7,6 @@ In DevTools, open the Console tool, enter `setTimeout(() => {debugger}, 3000)`, 
 
 After the timeout, JavaScript execution will pause, and the element that appears on focus should stay visible.
 
+This is useful for debugging components like Tooltip, Dropdown... which only visible via `:hover` or `:focus`.
+
 Ref: https://patrickbrosset.com/articles/2023-11-22-freezing-a-page-in-devtools/
