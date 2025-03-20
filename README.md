@@ -10,4 +10,13 @@ Today, I discovered the "Today I Learned" (TIL) concept, and it fits my needs fo
 - It doesn't require lengthy blog posts; short notes are enough.
 - It's a great way for me to practice writing in English.
 
+## Development Requirements
+
+- Node.js v16 (specified in `.nvmrc`)
+
+To use the correct Node.js version:
+```bash
+nvm use
+```
+
 Nice to meet you here! ♥️
